@@ -44,7 +44,7 @@ class Event(models.Model):
     event_name = models.CharField(max_length=12)
     event_description = models.TextField()
     event_start = models.DateTimeField(auto_now_add=True)
-    event__end = models.DateTimeField()
+    event_end = models.DateTimeField()
     
     class Meta:
         ordering = ['event_start']
